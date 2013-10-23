@@ -14,18 +14,18 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/txvCiclo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="TextView" />
+            android:text="@string/mensaje" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txvHola"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Hola" />
 
     </LinearLayout>
 

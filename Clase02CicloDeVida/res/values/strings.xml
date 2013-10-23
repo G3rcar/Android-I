@@ -4,5 +4,7 @@
     <string name="app_name">Clase02 Ciclo de Vida</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="mensaje">Ciclo de Vida</string>
+    <string name="mensaje1">Ciclo de Vida 1</string>
 
 </resources>
