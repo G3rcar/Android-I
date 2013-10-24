@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onResume();
         state++;
-        texto = texto + "\n"+state+" onResume";
+        texto = texto + "\n"+state+" onDestroy";
         tv.setText(texto);
 	}
 
@@ -102,8 +102,6 @@ public class MainActivity extends Activity {
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-        state++;
-        texto = texto + "\n"+state+" onStart";
         Toast.makeText(this, "Iniciando", Toast.LENGTH_SHORT).show();
 	}
 
@@ -112,9 +110,6 @@ public class MainActivity extends Activity {
 	protected void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-        state++;
-        texto = texto + "\n"+state+" onStop";
-        Toast.makeText(this, "Finalizando", Toast.LENGTH_SHORT).show();
 	}
     
 }

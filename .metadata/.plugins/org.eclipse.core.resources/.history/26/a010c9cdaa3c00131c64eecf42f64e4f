@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onResume();
         state++;
-        texto = texto + "\n"+state+" onResume";
+        texto = texto + "\n"+state+" onDestroy";
         tv.setText(texto);
 	}
 

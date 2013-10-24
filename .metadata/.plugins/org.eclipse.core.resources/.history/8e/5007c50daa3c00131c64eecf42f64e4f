@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onResume();
         state++;
-        texto = texto + "\n"+state+" onResume";
+        texto = texto + "\n"+state+" onDestroy";
         tv.setText(texto);
 	}
 
@@ -113,7 +113,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onStop();
         state++;
-        texto = texto + "\n"+state+" onStop";
+        texto = texto + "\n"+state+" onSaveInstance";
         Toast.makeText(this, "Finalizando", Toast.LENGTH_SHORT).show();
 	}
     
