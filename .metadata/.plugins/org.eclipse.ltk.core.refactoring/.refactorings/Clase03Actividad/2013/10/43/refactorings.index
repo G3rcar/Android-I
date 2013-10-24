@@ -1,1 +1,4 @@
 1382620729416	Change Layout
+1382620973889	Extracts string 'null' into R.string.lblEnviar
+1382621188725	Extracts string 'null' into R.string.hinMessage
+1382621257437	Rename field 'btnEnviar'
