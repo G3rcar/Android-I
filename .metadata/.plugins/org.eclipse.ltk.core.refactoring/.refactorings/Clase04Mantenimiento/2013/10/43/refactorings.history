@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Change Layout" description="Change Layout" file="/Clase04Mantenimiento/res/layout/activity_main.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/Clase04Mantenimiento" sel-end="499" sel-start="0" stamp="1382705476238" type="android.widget.ScrollView"/>&#x0A;<refactoring comment="Extracts string &apos;null&apos; into R.string.lblPrimerNombre" description="Extracts string &apos;null&apos; into R.string.lblPrimerNombre" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="SELECT_NEW_ID" proj="/Clase04Mantenimiento" rplc-all-java="false" rplc-all-xml="false" stamp="1382705853374"/>
+</session>
