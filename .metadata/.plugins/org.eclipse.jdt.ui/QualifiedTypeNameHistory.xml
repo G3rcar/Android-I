@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="com.udb.modulo1.clase02.R.string"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.widget.AutoCompleteTextView"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04.R.array"/>
 <fullyQualifiedTypeName name="android.R"/>
@@ -18,4 +17,8 @@
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04.R.id"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.g3rcar.simplecalculator.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
 </qualifiedTypeNameHistroy>
