@@ -11,21 +11,24 @@
     <string name="lblDepartamento">Departamento</string>
     <string name="btnGuardar">Guardar</string>
     <string name="btnEnviar">Enviar</string>
+
     <string-array name="arrDepartamentos">
-        <item >Ahuachapán</item>
-        <item >Sonsonate</item>
-        <item >Santa Ana</item>
-        <item >Chalatenango</item>
-        <item >La Libertad</item>
-        <item >San Salvador</item>
-        <item >Cuscatlán</item>
-        <item >La Paz</item>
-        <item >San Vicente</item>
-        <item >Morazán</item>
-        <item >San Miguel</item>
-        <item >La Unión</item>
-        <item >Cabañas</item>
-        <item >Usulután</item>
+        <item>Ahuachapán</item>
+        <item>Sonsonate</item>
+        <item>Santa Ana</item>
+        <item>Chalatenango</item>
+        <item>La Libertad</item>
+        <item>San Salvador</item>
+        <item>Cuscatlán</item>
+        <item>La Paz</item>
+        <item>San Vicente</item>
+        <item>Morazán</item>
+        <item>San Miguel</item>
+        <item>La Unión</item>
+        <item>Cabañas</item>
+        <item>Usulután</item>
     </string-array>
+
+    <string name="title_activity_result">Resultado</string>
 
 </resources>
