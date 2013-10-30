@@ -31,4 +31,8 @@
 
     <string name="title_activity_result">Resultado</string>
 
+    <string name="hintNota">Escriba una nota para aceptar</string>
+
+    <string name="btnAceptar">Aceptar</string>
+
 </resources>

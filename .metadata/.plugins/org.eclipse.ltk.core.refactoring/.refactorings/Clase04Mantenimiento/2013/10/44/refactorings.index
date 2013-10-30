@@ -1,2 +1,4 @@
 1383052612959	Move compilation unit
 1383052843958	Change Layout
+1383138991187	Extracts string 'null' into R.string.hintNombre
+1383140041945	Extracts string 'null' into R.string.btnAceptar

@@ -6,13 +6,17 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.support.v4.app.NavUtils;
+import android.widget.Toast;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
-public class ResultActivity extends Activity {
+public class ResultActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,11 @@ public class ResultActivity extends Activity {
 		
 		TextView txvDepartamento = (TextView)findViewById(R.id.txvDepartamento);
 		txvDepartamento.setText(data.getDepartamento());
+		
+		((Button)findViewById(R.id.btnAceptar)).setOnClickListener(this);
+		
+		
+		
 	}
 
 	/**
@@ -74,6 +83,28 @@ public class ResultActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		try{
+			switch(v.getId()){
+				case R.id.btnAceptar:
+					String texto = ((EditText)findViewById(R.id.edtNote)).getText().toString();
+					if(texto.trim().equals("")){
+						throw new Exception("Tiene que escribir una nota v‡lida");
+					}
+					Intent intent2 = new Intent();
+					intent2.putExtra("nota", texto);
+					setResult(RESULT_OK,intent2);
+					finish();
+					break;
+			}
+		}catch(Exception e){
+			Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+		}
+		
 	}
 
 }

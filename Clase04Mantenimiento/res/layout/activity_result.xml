@@ -10,15 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ResultActivity" >
 
-    <TextView
-        android:id="@+id/txvFistName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    
-    <TextView
-        android:id="@+id/txvLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvFistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txvLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
     
     <TextView
         android:id="@+id/txvEmail"
@@ -34,5 +40,40 @@
         android:id="@+id/txvDepartamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#00000000"
+        />
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/hintNota"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLength="150"
+        android:maxLines="3" >
+
+        <requestFocus />
+    </EditText>
+    
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#00000000"
+        />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnAceptar" />
+    
 
 </LinearLayout>

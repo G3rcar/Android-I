@@ -39,10 +39,19 @@ public class MainActivity extends Activity {
 		super.onActivityResult(requestCode, resultCode, data);
 		
 		if(resultCode==RESULT_OK){
-			Toast.makeText(this, "Bienvenido", Toast.LENGTH_LONG).show();
+			try{
+				Bundle b = getIntent().getExtras();
+				String nota = b.getString("nota");
+				Toast.makeText(this, "Bienvenido: "+nota, Toast.LENGTH_LONG).show();
+				
+			}catch(Exception e){
+				Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+			}
 		}else{
 			Toast.makeText(this, "L‡stima", Toast.LENGTH_LONG).show();
 		}
+		
+		
 		
 	}
 	
