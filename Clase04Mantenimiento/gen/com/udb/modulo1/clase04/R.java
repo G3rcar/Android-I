@@ -54,6 +54,7 @@ public final class R {
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_result=0x7f030001;
+        public static final int autocomplete_item=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -101,5 +102,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int labelsub=0x7f070002;
     }
 }
