@@ -11,12 +11,10 @@
 <fullyQualifiedTypeName name="android.os.Build"/>
 <fullyQualifiedTypeName name="android.os.Build.VERSION"/>
 <fullyQualifiedTypeName name="android.util.Patterns"/>
-<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="com.g3rcar.simplecalculator.R.id"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04Bean.Data"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04.R.id"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04.R.layout"/>
 <fullyQualifiedTypeName name="android.app.ActivityGroup"/>
@@ -33,7 +31,15 @@
 <fullyQualifiedTypeName name="android.view.inputmethod.EditorInfo"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
-<fullyQualifiedTypeName name="com.udb.modulo1.clase05.R.id"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.udb.modulo1.clase05.R.id"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.view.View.OnFocusChangeListener"/>
+<fullyQualifiedTypeName name="android.view.WindowManager"/>
+<fullyQualifiedTypeName name="android.view.WindowManager.LayoutParams"/>
+<fullyQualifiedTypeName name="android.view.KeyEvent"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.widget.CheckBox"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.udb.modulo1.clase06.R.id"/>
 </qualifiedTypeNameHistroy>

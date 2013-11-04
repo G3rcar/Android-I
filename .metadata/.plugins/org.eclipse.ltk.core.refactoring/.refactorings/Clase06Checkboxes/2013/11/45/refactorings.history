@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Change Layout" description="Change Layout" file="/Clase06Checkboxes/res/layout/activity_main.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/Clase06Checkboxes" sel-end="499" sel-start="0" stamp="1383572951431" type="android.widget.ScrollView"/>&#x0A;<refactoring comment="Change Layout" description="Change Layout" file="/Clase06Checkboxes/res/layout/activity_main.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/Clase06Checkboxes" sel-end="700" sel-start="0" stamp="1383572995110" type="android.widget.LinearLayout"/>
+</session>

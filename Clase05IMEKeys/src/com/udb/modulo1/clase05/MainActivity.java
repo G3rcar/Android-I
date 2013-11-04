@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnKeyListener;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -67,7 +68,17 @@ public class MainActivity extends ActivityGroup implements OnKeyListener,OnEdito
 			}
 		
 		});
-		
+		edtTxt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+			
+			@Override
+			public void onFocusChange(View view, boolean hasFocus) {
+				// TODO Auto-generated method stub
+				if(hasFocus){
+					getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+				}
+				
+			}
+		});
 		manager = getLocalActivityManager();
 		
 	}
@@ -87,7 +98,7 @@ public class MainActivity extends ActivityGroup implements OnKeyListener,OnEdito
 	}
 	
 	public void finishFromChild(Activity child){
-		String idString = child.getIntent().getStringExtra("id2String");
+		String idString = child.getIntent().getStringExtra("idString");
 		txtView.setText("Actividad eliminada: "+idString);
 		Window window2 = child.getWindow();
 		View childView = window2.getDecorView();
@@ -104,9 +115,12 @@ public class MainActivity extends ActivityGroup implements OnKeyListener,OnEdito
 	}
 
 	@Override
-	public boolean onKey(View v, int keyCode, KeyEvent event) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean onKey(View view, int keyCode, KeyEvent event) {
+		boolean handle = false;
+		if(event.getAction()==KeyEvent.ACTION_DOWN && keyCode==KeyEvent.KEYCODE_ENTER){
+			handle = callActivity();
+		}
+		return handle;
 	}
 
 	@Override

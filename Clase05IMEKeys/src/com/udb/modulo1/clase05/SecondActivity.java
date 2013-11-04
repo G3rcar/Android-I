@@ -16,7 +16,7 @@ import android.os.Build;
 public class SecondActivity extends Activity implements OnClickListener {
 	
 	TextView txtView;
-	int m=0;
+	int n=0;
 	String id;
 
 	@Override
@@ -25,21 +25,21 @@ public class SecondActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_second);
 		// Show the Up button in the action bar.
 		
-		/*
+		
 		txtView = (TextView)findViewById(R.id.textPush);
+		
 		Button btnPush = (Button)findViewById(R.id.btnPush);
 		btnPush.setOnClickListener(this);
-		
 
 		Button btnDelete = (Button)findViewById(R.id.btnDelete);
 		btnDelete.setOnClickListener(this);
-		*/
 		
-		//Intent intent = getIntent();
-		//id = intent.getStringExtra("idString");
-		//txtView.setText(id);
 		
-		setupActionBar();
+		Intent intent = getIntent();
+		id = intent.getStringExtra("idString");
+		txtView.setText(id);
+		
+		//setupActionBar();
 	}
 
 	/**
@@ -54,7 +54,6 @@ public class SecondActivity extends Activity implements OnClickListener {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.second, menu);
 		return true;
 	}
@@ -63,13 +62,6 @@ public class SecondActivity extends Activity implements OnClickListener {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			// This ID represents the Home or Up button. In the case of this
-			// activity, the Up button is shown. Use NavUtils to allow users
-			// to navigate up one level in the application structure. For
-			// more details, see the Navigation pattern on Android Design:
-			//
-			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
-			//
 			NavUtils.navigateUpFromSameTask(this);
 			return true;
 		}
@@ -77,9 +69,18 @@ public class SecondActivity extends Activity implements OnClickListener {
 	}
 
 	@Override
-	public void onClick(View v) {
+	public void onClick(View view) {
 		// TODO Auto-generated method stub
-		
+		switch(view.getId()){
+			case R.id.btnPush:
+				n++;
+				txtView.setText("pulsando "+n+" veces");
+			break;
+			
+			case R.id.btnDelete:
+				this.finish();
+			break;
+		}
 	}
 
 }
