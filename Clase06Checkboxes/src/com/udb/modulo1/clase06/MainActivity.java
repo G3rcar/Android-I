@@ -42,5 +42,25 @@ public class MainActivity extends Activity {
 			break;
 		}
 	}
+	
+	
+	public String evaluar(CheckBox chkValue){
+		String like = "";
+		if(chkValue.isChecked()){
+			like = " "+chkValue.getText().toString();
+		}
+		return like;
+	}
+	
+	public void onClickOk(View view){
+		String likes = "";
+		CheckBox chkValue = (CheckBox)findViewById(R.id.chbCarne);
+		likes = likes + evaluar(chkValue);
+
+		chkValue = (CheckBox)findViewById(R.id.chbChicken);
+		likes = likes + evaluar(chkValue);
+		
+		Toast.makeText(this, "Seleccionaste "+likes, Toast.LENGTH_LONG).show();
+	}
 
 }

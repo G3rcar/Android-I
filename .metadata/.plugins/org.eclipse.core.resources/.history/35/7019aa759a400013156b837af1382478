@@ -1,7 +1,0 @@
-package com.udb.modulo1.clase04;
-
-public class Data extends Serializable {
-	private String firstName;
-	private String LastName;
-	private String 
-}

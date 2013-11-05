@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase08 Spinner</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="marcas">
+        <item >Sony</item>
+        <item >LG</item>
+        <item >Apple</item>
+    </string-array>
+    <string-array name="paises">
+        <item >Sony</item>
+        <item >LG</item>
+        <item >Apple</item>
+    </string-array>
+        <string name="lblSelectMarcas">Seleccione una marca</string>
+        <string name="lblSelectPaises">Seleccione un pais</string>
+
+</resources>

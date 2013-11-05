@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 	Double resultados = 0d;
 	String tmpEscrito = "";
 	String tmpChain = "";
@@ -18,17 +18,22 @@ public class MainActivity extends Activity {
 	
 	int operacion = SUMA;
 	
+	TextView txvOperaciones;
+	TextView txvResultado;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		
-		final TextView txvOperaciones = (TextView)findViewById(R.id.txvOperaciones);
-		final TextView txvResultado = (TextView)findViewById(R.id.txvResultado);
+		txvOperaciones = (TextView)findViewById(R.id.txvOperaciones);
+		txvResultado = (TextView)findViewById(R.id.txvResultado);
+		
 		txvOperaciones.setText("");
 		txvResultado.setText("");
 		
+		/*
 		Button btnUno = (Button)findViewById(R.id.btnUno);
 		btnUno.setOnClickListener(new OnClickListener(){
 			@Override
@@ -194,6 +199,7 @@ public class MainActivity extends Activity {
 			}
 			
 		});
+		*/
 		
 	}
 	
@@ -216,6 +222,37 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+
+	@Override
+	public void onClick(View view) {
+		tmpChain = txvOperaciones.getText().toString();
+		String tmpNum = "";
+		switch(view.getId()){
+			case R.id.btnCero: tmpNum="0"; break;
+			case R.id.btnUno: tmpNum="1"; break;
+			case R.id.btnDos: tmpNum="2"; break;
+			case R.id.btnTres: tmpNum="3"; break;
+			case R.id.btnCuatro: tmpNum="4"; break;
+			case R.id.btnCinco: tmpNum="5"; break;
+			case R.id.btnSeis: tmpNum="6"; break;
+			case R.id.btnSiete: tmpNum="7"; break;
+			case R.id.btnOcho: tmpNum="8"; break;
+			case R.id.btnNueve: tmpNum="9"; break;
+			//case R.id.btnPunto: tmpNum="."; break;
+			case R.id.btnMas:
+				tmpChain = txvOperaciones.getText().toString();
+				txvOperaciones.setText(tmpChain+"+");
+				calcular(SUMA);
+				tmpEscrito = "";
+				txvResultado.setText(String.valueOf(resultados));
+			break;
+		}
+		if(!tmpNum.equals("")){
+			txvOperaciones.setText(tmpChain+tmpNum);
+			tmpEscrito += tmpNum;
+		}
+		
 	}
 	
 	

@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="android.os.Build"/>
 <fullyQualifiedTypeName name="android.os.Build.VERSION"/>
 <fullyQualifiedTypeName name="android.util.Patterns"/>
-<fullyQualifiedTypeName name="com.g3rcar.simplecalculator.R.id"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase04Bean.Data"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
@@ -38,8 +37,12 @@
 <fullyQualifiedTypeName name="android.view.WindowManager"/>
 <fullyQualifiedTypeName name="android.view.WindowManager.LayoutParams"/>
 <fullyQualifiedTypeName name="android.view.KeyEvent"/>
-<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.CheckBox"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.udb.modulo1.clase06.R.id"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.widget.RadioGroup"/>
+<fullyQualifiedTypeName name="android.widget.RadioButton"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.udb.modulo1.clase07.R.id"/>
+<fullyQualifiedTypeName name="com.g3rcar.simplecalculator.R.id"/>
 </qualifiedTypeNameHistroy>
