@@ -16,5 +16,6 @@
     </string-array>
     <string name="lblSelectMarcas">Seleccione una marca</string>
     <string name="lblSelectPaises">Seleccione un pais</string>
+    <string name="lblOk">Aceptar</string>
 
 </resources>

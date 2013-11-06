@@ -11,17 +11,23 @@
     tools:context=".MainActivity" >
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spnMarcas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/lblSelectMarcas" />
+
+    <Spinner
+        android:id="@+id/spnPaises"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/paises"
         android:prompt="@string/lblSelectPaises" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/marcas"
-        android:prompt="@string/lblSelectMarcas" />
+        android:onClick="onClickOk"
+        android:text="@string/lblOk" />
 
 </LinearLayout>
