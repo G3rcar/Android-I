@@ -1,0 +1,15 @@
+package com.udb.modulo1.clase09.fragments;
+
+import android.support.v4.app.DialogFragment;
+import android.widget.TimePicker;
+import android.app.TimePickerDialog;
+
+public class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
+
+	@Override
+	public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

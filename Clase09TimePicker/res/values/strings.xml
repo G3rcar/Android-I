@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase09 TimePicker O</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btntime">Tiempo</string>
+    <string name="timechange">Cambiar Hora</string>
+    <string name="currenttime">"Tiempo Actual (H:M): "</string>
+
+</resources>

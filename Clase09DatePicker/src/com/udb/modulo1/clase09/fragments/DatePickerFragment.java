@@ -15,7 +15,6 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 	
 	@Override
 	public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-		// TODO Auto-generated method stub
 		Calendar c = Calendar.getInstance();
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH, monthOfYear);
@@ -27,7 +26,6 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 	@Override
     public void onAttach(Activity activity)
     {
-        // when the fragment is initially shown (i.e. attached to the activity), cast the activity to the callback interface type
         super.onAttach(activity);
         try{
             mListener = (DatePickedListener) activity;
@@ -39,13 +37,11 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 	
 	@Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        // Use the current date as the default date in the picker
         final Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
         int day = c.get(Calendar.DAY_OF_MONTH);
 
-        // Create a new instance of DatePickerDialog and return it
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }
 	

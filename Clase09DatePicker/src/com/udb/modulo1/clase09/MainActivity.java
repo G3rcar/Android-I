@@ -4,9 +4,10 @@ import java.util.Calendar;
 
 import com.udb.modulo1.clase09.fragments.DatePickerFragment;
 import com.udb.modulo1.clase09.fragments.DatePickerFragment.DatePickedListener;
+import com.udb.modulo1.clase09.fragments.TimePickerFragment;
+import com.udb.modulo1.clase09.fragments.TimePickerFragment.TimePickedListener;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.text.format.DateFormat;
@@ -14,7 +15,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity implements DatePickedListener {
+public class MainActivity extends FragmentActivity implements DatePickedListener,TimePickedListener {
 	TextView txtDate;
 	TextView txtTime;
 	
@@ -40,9 +41,20 @@ public class MainActivity extends FragmentActivity implements DatePickedListener
 		txtDate.setText(DateFormat.format("yyyy/MM/dd", date));
 	}
 	
+	@Override
+	public void onTimePicked(Calendar time) {
+		// TODO Auto-generated method stub
+		txtTime.setText(DateFormat.format("h:mm a", time));
+	}
+	
 	public void showDatepicker(View v) {
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), "Date Picker");
+    }
+	
+	public void showTimepicker(View v) {
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "Time Picker");
     }
 	
 }
