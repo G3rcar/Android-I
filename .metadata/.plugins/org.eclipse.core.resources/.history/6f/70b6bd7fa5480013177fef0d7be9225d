@@ -1,0 +1,45 @@
+package com.g3rcar.simplecalculator;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+public class MainActivity extends Activity implements OnClickListener {
+	Double resultados = 0d;
+	String tmpEscrito = "";
+	String tmpChain = "";
+	final int SUMA = 1;
+	final int RESTA = 2;
+	final int MULTIPLICACION = 3;
+	final int DIVISION = 4;
+	final int IGUAL = 0;
+	
+	int operacion = SUMA;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);			
+		
+		((Button)findViewById(R.id.btnCero)).setOnClickListener(this);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	
+	
+	@Override
+	public void onClick(View view) {
+		int id = view.getId();
+		switch(id){
+		
+		}
+	}
+
+}

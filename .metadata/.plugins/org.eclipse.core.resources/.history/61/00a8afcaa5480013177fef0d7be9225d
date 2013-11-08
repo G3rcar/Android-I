@@ -1,0 +1,61 @@
+package com.g3rcar.simplecalculator;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class MainActivity extends Activity implements OnClickListener {
+	Double resultados = 0d;
+	String tmpEscrito = "";
+	String tmpChain = "";
+	final int SUMA = 1;
+	final int RESTA = 2;
+	final int MULTIPLICACION = 3;
+	final int DIVISION = 4;
+	final int IGUAL = 0;
+	
+	int operacion = SUMA;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);			
+		
+		((Button)findViewById(R.id.btnCero)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnUno)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnDos)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnTres)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnCuatro)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnCinco)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnSeis)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnSiete)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnOcho)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnNueve)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnMas)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnMenos)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnMultiplicacion)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnDivision)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnPunto)).setOnClickListener(this);
+		((Button)findViewById(R.id.btnIgual)).setOnClickListener(this);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	
+	
+	@Override
+	public void onClick(View view) {
+		int id = view.getId();
+		switch(id){
+		
+		}
+	}
+
+}
