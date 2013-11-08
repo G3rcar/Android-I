@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_settings"
+        android:icon="@drawable/action_settings" />
+  
+    <item 
+        android:id="@+id/action_new" 
+        android:orderInCategory="300"
+        android:icon="@drawable/content_new"></item>
+    
+    <item 
+        android:id="@+id/menuEdit" 
+        android:orderInCategory="200" 
+        android:title="@string/menuedit"
+        android:icon="@drawable/collections_view_as_grid"
+    ></item>
+
+</menu>

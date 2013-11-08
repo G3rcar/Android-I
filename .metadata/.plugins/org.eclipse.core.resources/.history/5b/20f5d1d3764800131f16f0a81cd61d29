@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase10 Menu</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_new">Nuevo</string>
+    <string name="menuedit">Edicion</string>
+    <string name="menucut">Cortar</string>
+    <string name="menucopy">Copiar</string>
+
+    <string-array name="food">
+        <item>Pollo</item>
+        <item>Carne</item>
+        <item>Pescado</item>
+        <item>Verduras</item>
+    </string-array>
+
+    <string name="lblfood">Seleccione una Comida?</string>
+    <string name="lblselec">Seleccionar</string>
+    <string name="lblinfo">Informacion</string>
+
+</resources>

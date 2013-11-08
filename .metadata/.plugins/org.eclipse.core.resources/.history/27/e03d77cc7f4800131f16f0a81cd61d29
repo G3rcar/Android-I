@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/action_settings"
+        app:showAsAction="always|ifRoom|withText" />
+  
+    <item 
+        android:id="@+id/action_new" 
+        android:orderInCategory="300"
+        android:icon="@drawable/content_new" 
+        app:showAsAction="always|ifRoom|withText" android:title=""/>
+    
+    <item 
+        android:id="@+id/menuEdit" 
+        android:orderInCategory="200" 
+        android:title="@string/menuedit"
+        android:icon="@drawable/collections_view_as_grid"
+    	app:showAsAction="always|ifRoom|withText">
+        
+        <menu>
+            <item android:id="@+id/menuCut" android:title="@string/menucut"/>
+            <item android:id="@+id/menuCopy" android:title="@string/menucopy"/>
+        </menu>
+    
+    </item>
+
+</menu>
