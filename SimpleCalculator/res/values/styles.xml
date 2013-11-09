@@ -19,18 +19,23 @@
     <style name="botonNumero">
         <item name="android:textSize">40sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_number</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:height">60dp</item>
     </style>
     
     <style name="resultadoNumero">
         <item name="android:textSize">35sp</item>
         <item name="android:gravity">right|center</item>
         <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
     <style name="operacionesTexto">
         <item name="android:textSize">15sp</item>
         <item name="android:gravity">left|center</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:background">@drawable/border</item>
+        <item name="android:textColor">#FFFFFF</item>
         
     </style>
     

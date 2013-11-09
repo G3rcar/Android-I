@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="botonNumero">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_number</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="resultadoNumero">
+        <item name="android:textSize">35sp</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="operacionesTexto">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:background">@drawable/border</item>
+        
+    </style>
+    
+    
+
+</resources>

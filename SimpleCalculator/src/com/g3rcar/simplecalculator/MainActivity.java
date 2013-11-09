@@ -1,5 +1,8 @@
 package com.g3rcar.simplecalculator;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -25,6 +28,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 	TextView txvOperaciones;
 	TextView txvResultado;
+	
+	NumberFormat formateador;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +57,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		txvOperaciones = (TextView)findViewById(R.id.txvOperaciones);
 		txvResultado = (TextView)findViewById(R.id.txvResultado);
-		
+		txvResultado.setText("0.0");
+	    
 	}
 
 	@Override
@@ -109,6 +115,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			txvOperaciones.setText(tmpChain);
 			calcular(op);
 			tmpEscrito = "0";
+
+			formateador = new DecimalFormat("0.######E0");
+			
 			txvResultado.setText(String.valueOf(resultados));
 			operando=true;
 		}
@@ -149,7 +158,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		operacion = SUMA;
 		tmpEscrito = "";
 		tmpChain = "";
-		txvResultado.setText("0");
+		txvResultado.setText("0.0");
 		txvOperaciones.setText(tmpChain);
 		
 	}
