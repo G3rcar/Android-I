@@ -1,0 +1,32 @@
+package com.udb.modulo1.clase13;
+
+import java.util.ArrayList;
+
+import com.udb.modulo1.clase13.beans.ApplicationBean;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.pm.PackageManager;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	
+	TextView textview;
+	ArrayList<ApplicationBean> applicationList = new ArrayList<ApplicationBean>();
+	PackageManager manager;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}

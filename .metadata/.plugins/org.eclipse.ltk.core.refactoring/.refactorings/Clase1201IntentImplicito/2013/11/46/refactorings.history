@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.udb.modulo1.clase12&apos; to &apos;com.udb.modulo1.clase1201&apos;&#x0A;- Original project: &apos;Clase1201IntentImplicito&apos;&#x0A;- Original element: &apos;Clase1201IntentImplicito/src/com.udb.modulo1.clase12&apos;&#x0A;- Renamed element: &apos;Clase1201IntentImplicito/src/com.udb.modulo1.clase1201&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.udb.modulo1.clase12&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.udb.modulo1.clase12" name="com.udb.modulo1.clase1201" qualified="false" references="true" stamp="1384261504008" textual="false" version="1.0"/>
+</session>

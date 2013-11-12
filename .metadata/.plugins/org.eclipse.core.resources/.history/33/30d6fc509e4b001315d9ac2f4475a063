@@ -1,0 +1,6 @@
+package com.udb.modulo1.clase13.beans;
+
+public class ApplicationBean {
+	String label,packageName,sourceDir;
+	Drawable icon;
+}
