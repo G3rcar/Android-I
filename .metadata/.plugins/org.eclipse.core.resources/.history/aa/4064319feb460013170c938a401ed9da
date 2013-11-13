@@ -1,8 +1,0 @@
-package com.udb.modulo1.clase09.fragments;
-
-import android.support.v4.app.DialogFragment;
-import android.app.DatePickerDialog;
-
-public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
-
-}
