@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase17</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnback">Atras</string>
+    <string name="btnhome">Home</string>
+    <string name="btnforware">Adelante</string>
+
+</resources>
