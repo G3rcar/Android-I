@@ -984,6 +984,9 @@ containing a value of this type.
         public static final int content_new=0x7f020059;
         public static final int ic_action_user=0x7f02005a;
         public static final int ic_launcher=0x7f02005b;
+        public static final int item_normal=0x7f02005c;
+        public static final int item_pressed=0x7f02005d;
+        public static final int labelback=0x7f02005e;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f050042;
