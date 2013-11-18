@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clase 22</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnsave">Guardar</string>
+    <string name="menunew">Nuevo</string>
+    <string name="hitname">Nombre Completo</string>
+    <string name="hitage">Edad</string>
+    <string name="title_activity_mto_student">Mantenimiento Estudiante</string>
+
+</resources>

@@ -1,0 +1,7 @@
+package com.udb.modulo1.clase21.breans;
+
+import java.io.Serializable;
+
+public class StudentBean implements Serializable {
+
+}

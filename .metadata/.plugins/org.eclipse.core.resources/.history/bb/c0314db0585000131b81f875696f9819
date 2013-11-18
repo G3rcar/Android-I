@@ -1,0 +1,32 @@
+package com.udb.modulo1.clase21;
+
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class MainActivity extends ActionBarActivity {
+
+	public static final String STUDENT_KEY = "com.udb.modulo1.clase25.STUDENT";
+	public static final String STUDENT_MTO = "com.udb.modulo1.clase25.STUDENTMTO";
+	SQLiteDatabase db =null;
+	ListView listView;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		listView = (ListView) findViewById(R.id.listViewStudent);
+		listView.setOnItemClickListener(this);
+		initDatabase();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}
