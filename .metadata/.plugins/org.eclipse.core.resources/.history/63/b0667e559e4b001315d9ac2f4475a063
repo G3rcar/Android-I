@@ -1,8 +1,0 @@
-package com.udb.modulo1.clase13.beans;
-
-import android.graphics.drawable.Drawable;
-
-public class ApplicationBean {
-	String label,packageName,sourceDir;
-	Drawable icon;
-}
