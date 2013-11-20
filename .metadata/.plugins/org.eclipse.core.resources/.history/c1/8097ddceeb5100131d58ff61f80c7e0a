@@ -1,0 +1,7 @@
+package com.udb.modulo2.clase02;
+
+import android.support.v4.app.DialogFragment;
+
+public class DialogMapOptions extends DialogFragment {
+
+}
