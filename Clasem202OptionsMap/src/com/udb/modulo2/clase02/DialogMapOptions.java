@@ -40,6 +40,9 @@ public class DialogMapOptions extends DialogFragment {
 	    chkZoomGesture = (CheckBox) view.findViewById(R.id.chkZoomgesture);
 	    chkZoomGesture.setChecked(optionsbean.isZoomgesture());
 	    
+	    //chkMylocation = (CheckBox) view.findViewById(R.id.chkMyLocation);
+	    //chkMylocation.setChecked(optionsbean.isMyposition());
+	    
 	    spnMapType = (Spinner) view.findViewById(R.id.spn_map_type);
 	    @SuppressWarnings("unchecked")
 		ArrayAdapter<String> adapter = (ArrayAdapter<String>) spnMapType.getAdapter();
@@ -55,6 +58,7 @@ public class DialogMapOptions extends DialogFragment {
 	                   optionsbean.setScrollgesture(chkSrollgesture.isChecked());
 	                   optionsbean.setZoomcontroll(chkZoomcontrol.isChecked());
 	                   optionsbean.setZoomgesture(chkZoomGesture.isChecked());
+	                   optionsbean.setMyposition(chkMylocation.isChecked());
 	                   mListener.onDialogPositiveClick(DialogMapOptions.this, optionsbean);
 	               }
 	           })

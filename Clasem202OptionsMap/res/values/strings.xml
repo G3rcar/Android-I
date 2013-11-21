@@ -19,5 +19,6 @@
     <string name="lbltitleoptions">Opciones Mapa</string>
     <string name="lblcompass">Compass</string>
     <string name="lblmylocation">"Boton My Location "</string>
+    <string name="lblMyLocation">Posición</string>
 
 </resources>

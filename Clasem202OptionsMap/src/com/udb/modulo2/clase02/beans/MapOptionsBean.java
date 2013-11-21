@@ -13,7 +13,14 @@ public class MapOptionsBean implements Serializable {
 	private boolean scrollgesture = true;
 	private boolean zoomcontroll = true;
 	private boolean zoomgesture = true;
+	private boolean myposition = true;
 	
+	public boolean isMyposition() {
+		return myposition;
+	}
+	public void setMyposition(boolean myposition) {
+		this.myposition = myposition;
+	}
 	public String getMaptype() {
 		return maptype;
 	}

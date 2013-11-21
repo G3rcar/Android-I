@@ -1151,11 +1151,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f060032;
         public static final int action_mode_bar_stub=0x7f060031;
         public static final int action_mode_close_button=0x7f060025;
-        public static final int action_settings=0x7f06004b;
+        public static final int action_settings=0x7f06004c;
         public static final int activity_chooser_view_content=0x7f060026;
         public static final int always=0x7f06000f;
         public static final int beginning=0x7f060014;
         public static final int checkbox=0x7f06002e;
+        public static final int chkMyLocation=0x7f06004b;
         public static final int chkRotategesture=0x7f060047;
         public static final int chkScrollgesture=0x7f060048;
         public static final int chkZoomcontrol=0x7f060049;
@@ -1396,6 +1397,7 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f07000e;
         public static final int hello_world=0x7f070024;
+        public static final int lblMyLocation=0x7f07002e;
         public static final int lblcompass=0x7f07002c;
         public static final int lblmylocation=0x7f07002d;
         public static final int lblrotategesture=0x7f070025;
