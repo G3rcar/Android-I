@@ -1,0 +1,78 @@
+package com.udb.modulo2.clase03;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesClient.ConnectionCallbacks;
+import com.google.android.gms.common.GooglePlayServicesClient.OnConnectionFailedListener;
+import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMyLocationButtonClickListener;
+
+import android.location.Location;
+import android.os.Bundle;
+import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends FragmentActivity implements ConnectionCallbacks,OnConnectionFailedListener,LocationListener,
+OnMyLocationButtonClickListener {
+	
+	private GoogleMap mMap;
+	private LocationClient mLocationClient;
+	private TextView txtMylocation;
+	private boolean firstloadlocation=false;
+	
+	private static final LocationRequest REQUEST = LocationRequest.create()
+	        .setInterval(5000)         // 5 seconds
+	        .setFastestInterval(16)    // 16ms = 60fps
+	        .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		txtMylocation = (TextView) findViewById(R.id.txtMyLocation);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onMyLocationButtonClick() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void onLocationChanged(Location arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onConnectionFailed(ConnectionResult arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onConnected(Bundle arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onDisconnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
