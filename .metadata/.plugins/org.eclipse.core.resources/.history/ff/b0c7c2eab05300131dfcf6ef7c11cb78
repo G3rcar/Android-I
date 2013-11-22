@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+	
+    
+    <item
+		android:id="@+id/actionViewLayout"
+		app:showAsAction="ifRoom|collapseActionView"
+		android:icon="@android:drawable/ic_input_add"
+		android:title="Add"
+		android:actionLayout="@layout/url_container" />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/action_settings"/>
+
+</menu>

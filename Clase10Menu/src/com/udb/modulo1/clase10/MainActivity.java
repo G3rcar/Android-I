@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnKeyListener;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -65,23 +67,19 @@ public class MainActivity extends ActionBarActivity {
 	}
 
 	@Override
-		public boolean onContextItemSelected(MenuItem item) {
-			AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
-		    switch (item.getItemId()) {
-		        case R.id.iteminfo:
-		            Toast.makeText(this, "Informacion: "+foods[(int) info.id], Toast.LENGTH_SHORT).show();
-		            return true;
-		        case R.id.itemselecc:
-		        	Toast.makeText(this, "Selecciono: "+foods[(int) info.id], Toast.LENGTH_SHORT).show();
-		            return true;
-		        default:
-		            return super.onContextItemSelected(item);
-		    }
-		}
-	
-	
-	
-	
+	public boolean onContextItemSelected(MenuItem item) {
+		AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+	    switch (item.getItemId()) {
+	        case R.id.iteminfo:
+	            Toast.makeText(this, "Informacion: "+foods[(int) info.id], Toast.LENGTH_SHORT).show();
+	            return true;
+	        case R.id.itemselecc:
+	        	Toast.makeText(this, "Selecciono: "+foods[(int) info.id], Toast.LENGTH_SHORT).show();
+	            return true;
+	        default:
+	            return super.onContextItemSelected(item);
+	    }
+	}	
 	
 	
 
