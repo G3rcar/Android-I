@@ -1,7 +1,0 @@
-package com.g3rdeveloper.navbasic;
-
-import android.webkit.WebViewClient;
-
-public class ClienteWeb extends WebViewClient {
-
-}

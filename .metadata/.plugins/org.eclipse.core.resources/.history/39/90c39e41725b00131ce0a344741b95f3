@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+	<item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_social_person"
+        app:showAsAction="always"
+        android:title="@string/btnInicio">
+	</item>
+	
+	<item
+        android:id="@+id/action_fav"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_rating_important"
+        app:showAsAction="ifRoom"
+        android:title="@string/btnFavs">
+	</item>
+	<item
+        android:id="@+id/action_back"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_navigation_back"
+        app:showAsAction="ifRoom"
+        android:title="@string/btnAtras">
+	</item>
+
+</menu>

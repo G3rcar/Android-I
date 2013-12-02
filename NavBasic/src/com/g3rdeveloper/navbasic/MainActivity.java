@@ -1,6 +1,12 @@
 package com.g3rdeveloper.navbasic;
 
+import com.g3rdeveloper.navbasic.sqlite.SQLiteHelper;
+
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.KeyEvent;
@@ -23,6 +29,9 @@ public class MainActivity extends ActionBarActivity implements OnKeyListener,OnE
 	final ActionBarActivity activity = this;
 	WebView webView;
 	EditText editText;
+	SQLiteDatabase db;
+	
+	String inicio = "file:///android_asset/index.html";
 	
 	@SuppressLint("SetJavaScriptEnabled")
 	@Override
@@ -49,7 +58,21 @@ public class MainActivity extends ActionBarActivity implements OnKeyListener,OnE
 		WebSettings webSettings = webView.getSettings();
 		webSettings.setBuiltInZoomControls(true);
 		webSettings.setJavaScriptEnabled(true);	
-		webView.loadUrl("file:///android_asset/index.html");
+		
+		Bundle b = getIntent().getExtras();
+		String url="";
+		try{
+			Uri data = getIntent().getData();
+			url = data.toString();
+			editText.setText(url);
+		}catch(Exception e){
+			
+		}
+        if(url.equals("")){
+    		webView.loadUrl(inicio);
+        }else{
+        	webView.loadUrl(url);
+        }
 		
 		editText.setOnEditorActionListener(this);
 		editText.setOnKeyListener(this);
@@ -68,11 +91,13 @@ public class MainActivity extends ActionBarActivity implements OnKeyListener,OnE
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()){
 		case R.id.action_home:
-			//1
+			webView.loadUrl(inicio);
 			return true;
-		case R.id.action_back:
-			//2
+		case R.id.action_fav:
+			saveFav();
 			return true;
+		case R.id.action_favs:
+			openFavs();
 		default:
 			return true;
 		}
@@ -102,11 +127,40 @@ public class MainActivity extends ActionBarActivity implements OnKeyListener,OnE
 	
 	private boolean entrarUrl(){
 		String url = editText.getText().toString();
+		if(!(url.contains("http://") || url.contains("https://"))){
+			url = "http://"+url;
+		}
 		webView.loadUrl(url);
 		
 		return true;
 	}
 	
 	
+	
+	private void saveFav(){
+		SQLiteHelper sqliteHelper = new SQLiteHelper(this, "navegador.db", null, 1);
+		db = sqliteHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("url", editText.getText().toString());
+		db.insert("favoritos", null, values);
+
+		db.close();
+		Toast.makeText(this, "Se ha guardado el favorito", Toast.LENGTH_SHORT).show();
+	}
+	
+	
+	private void openFavs(){	
+		Intent intent = new Intent(this, FavsActivity.class);
+		startActivityForResult(intent,2);
+		
+	}
+	
+	public void onActivityResult(int inputCode, int resultCode, Intent intent2){
+		if(resultCode==RESULT_OK){
+			String url = intent2.getStringExtra("URL_g3rNAV");
+			webView.loadUrl(url);
+			editText.setText(url);
+		}
+	}
 
 }
